@@ -33,14 +33,10 @@ class FirstFragment : Fragment() {
             val s: View.OnClickListener =
                 Navigation.createNavigateOnClickListener(R.id.action_firstFragment_to_secondFragment)
             binding.buttonFrag1.setOnClickListener(s)
-//            val button: Button = view.findViewById(R.id.button_frag1)
-//            button.setOnClickListener(s)
         }else{
             val s: View.OnClickListener =
                 Navigation.createNavigateOnClickListener(R.id.action_firstFragment_to_thirdFragment)
             binding.buttonFrag1.setOnClickListener(s)
-//            val button: Button = view.findViewById(R.id.button_frag1)
-//            button.setOnClickListener(s)
         }
     }
 }
