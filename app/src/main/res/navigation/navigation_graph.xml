@@ -21,10 +21,19 @@
         android:id="@+id/secondFragment"
         android:name="com.example.jetpacknavigation.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_movieActivity"
+            app:destination="@id/movieActivity" />
+    </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.jetpacknavigation.ThirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
+    <activity
+        android:id="@+id/movieActivity"
+        android:name="com.example.jetpacknavigation.movies.MovieActivity"
+        android:label="activity_movie"
+        tools:layout="@layout/activity_movie" />
 </navigation>

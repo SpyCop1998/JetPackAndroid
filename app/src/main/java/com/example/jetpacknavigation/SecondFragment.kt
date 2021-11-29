@@ -29,9 +29,11 @@ class SecondFragment : Fragment() {
         val backBtn:Button=view.findViewById(R.id.button_frag2)
 
         backBtn.setOnClickListener {
-            val navController: NavController? =
-                activity?.let { it1 -> Navigation.findNavController(it1,R.id.myHostFragment) }
-            navController?.navigateUp()
+            val s:View.OnClickListener=Navigation.createNavigateOnClickListener(R.id.action_secondFragment_to_movieActivity)
+            binding.buttonFrag2.setOnClickListener(s)
+//            val navController: NavController? =
+//                activity?.let { it1 -> Navigation.findNavController(it1,R.id.myHostFragment) }
+//            navController?.navigateUp()
         }
     }
 }

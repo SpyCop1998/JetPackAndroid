@@ -29,7 +29,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if(false) {
+        if(true) {
             val s: View.OnClickListener =
                 Navigation.createNavigateOnClickListener(R.id.action_firstFragment_to_secondFragment)
             binding.buttonFrag1.setOnClickListener(s)
